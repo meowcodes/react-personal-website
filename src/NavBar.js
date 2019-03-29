@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import cat from './cat.svg'
-// import './NavBar.css';
+import './NavBar.css';
 
 class NavBar extends Component {
   render() {
     return (
       <div className="NavBar">
-        <div>
-          <img src={ cat } alt="meow" />
-          <p>About</p>
-          <p>Experience</p>
-          <p>Projects</p>
-          <p>Contact</p>
+        <div className="NavBar-inner">
+          <img className="NavBar-icon" src={ cat } alt="meow" />
+          <span>about</span>
+          <span>experience</span>
+          <span>projects</span>
+          <span>contact</span>
+          <span>resume</span>
         </div>
       </div>
     );

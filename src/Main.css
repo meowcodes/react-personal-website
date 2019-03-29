@@ -1,0 +1,129 @@
+.Main {
+  width: 90vw;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.Main-landing,
+.Main-about,
+.Main-experience,
+.Main-projects,
+.Main-contact {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Main-landing{
+  min-height: 100vh;
+} 
+
+.Main-about,
+.Main-experience,
+.Main-projects{
+  min-height: 75vh;
+}
+
+.Main-contact {
+  min-height: 50vh;
+}
+
+.Main-heading {
+  color: #f5ac72;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 0.25rem;
+}
+
+.Main-name {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1rem 0rem;
+  color: #ffd275;
+}
+
+.Main-title-box {
+  margin: 1rem;
+}
+
+.Main-titles {
+  font-size: 0.9rem;
+  margin: 0.25rem 0.45rem;
+  color: #51211d;
+  padding: 0.25rem 0.35rem;
+  font-weight: bold;
+  background-color: #f5ac72;
+  display: inline-block;
+}
+
+.Main-btn {
+  width: 100px;
+}
+
+.Main-about-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.Main-text-box {
+  width: 60%;
+  margin: 1rem;
+}
+
+.Main-text {
+  display: inline-block;
+  margin: 1rem;
+}
+
+.Main-text b {
+  color: #f5ac72;
+  font-size: 0.9rem;
+}
+
+.Main-img-box {
+  position: relative;
+  width: 40%;
+}
+
+.Main-img-box img {
+  position: absolute;
+}
+
+.Main-img-cat {
+  z-index: 3;
+  width: 90%;
+}
+
+.Main-img-snorkeling {
+  z-index: 2;
+  width: 75%;
+  bottom: 1rem;
+  right: 0;
+}
+
+.Main-select-box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.Main-job {
+  color: #ffd275;
+  /* background-color: #51211d; */
+  /* color: #ffd275; */
+  border: none;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem; 
+  margin-left: 1.5rem;
+  padding: 0.25rem 0.5rem;
+  font-weight: bold;
+}
+
+.Main-active {
+  background-color: #51211d;
+  
+}
+
