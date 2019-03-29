@@ -6,7 +6,6 @@
 
 .Main-landing,
 .Main-about,
-.Main-experience,
 .Main-projects,
 .Main-contact {
   margin: 1rem;
@@ -15,16 +14,24 @@
   justify-content: center;
 }
 
+.Main-experience,
+.Main-projects {
+  margin: 1rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .Main-landing{
   min-height: 100vh;
 } 
-
 .Main-about,
-.Main-experience,
-.Main-projects{
+.Main-experience {
   min-height: 75vh;
 }
 
+.Main-projects,
 .Main-contact {
   min-height: 50vh;
 }
@@ -62,12 +69,17 @@
   width: 100px;
 }
 
+.Main-btn:hover {
+  background-color: #ffd275;
+  color: #2b433f;
+}
+
 .Main-about-box {
   display: flex;
   flex-direction: row;
 }
 
-.Main-text-box {
+.Main-about .Main-text-box {
   width: 60%;
   margin: 1rem;
 }
@@ -111,8 +123,6 @@
 
 .Main-job {
   color: #ffd275;
-  /* background-color: #51211d; */
-  /* color: #ffd275; */
   border: none;
   font-family: inherit;
   text-transform: uppercase;
@@ -122,8 +132,120 @@
   font-weight: bold;
 }
 
-.Main-active {
-  background-color: #51211d;
-  
+.Main-job:hover {
+  background-color: beige;
+  color: #2b433f;
 }
 
+.Main-active {
+  background-color: #51211d;
+}
+
+.Main-exp-title {
+  padding: 0.5rem 0.25rem;
+  font-size: 0.85rem;
+  /* display: block; */
+}
+
+.Main-exp-title b {
+  text-decoration: underline;
+}
+
+.Main-exp-date {
+  font-size: 0.65rem;
+  font-weight: bold;
+  margin: 0.5rem;
+  padding: 0.25rem 0.35rem;
+  background-color: #51211d;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.Main-exp-details {
+  display: block;
+  margin: 0.5rem;
+}
+
+.Main-hr {
+  margin: 0.85rem 0.25rem;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ffd275;
+}
+
+.Main-projects-outer {
+  display: flex;
+  flex-direction: row;
+}
+
+.Main-project-box {
+  margin: 1rem;
+  padding: 1rem 1rem 0rem;
+  width: 50%;
+}
+
+.Main-project-title {
+  display: inline-block;
+  padding: 0.25rem 0.35rem;
+  background-color: #51211d;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  color: #ffd275;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.Main-project-title:hover {
+  text-decoration: underline;
+}
+
+.Main-project-text {
+  display: block;
+  margin: 1rem;
+  font-size: 0.85rem;
+}
+
+.Main-project-link {
+  color: #f5ac72;
+  /* border: solid 1px #ffd275; */
+  margin: 0.5rem;
+  /* padding: 0.25rem 0.35rem; */
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: block;
+  margin-left: 1rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.Main-project-tags {
+  display: block;
+  font-size: 0.75rem;
+  margin: 1.5rem 1rem;
+}
+
+.Main-project-tags span {
+  padding: 0.25rem 0.5rem;
+  background-color: #ffd275;
+  color: #2b433f;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0.25rem;
+  display: inline-block;
+}
+
+.Main-contact-box {
+  margin: 2rem auto;
+}
+
+.Main-contact-box i {
+  margin: 2rem 2rem;
+  font-size: 2.5rem;
+  color: #ffd275;
+}
+
+.Main-contact-box i:hover {
+  color: beige;
+}

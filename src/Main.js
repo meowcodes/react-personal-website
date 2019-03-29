@@ -5,8 +5,17 @@ import './Main.css';
 
 class Main extends Component {
 
-  updateExp(evt) {
-    console.log(evt.target.value);
+  constructor(props){
+    super(props);
+    this.state = {
+      exp: "dev"
+    }
+  }
+
+  updateExp(str) {
+    this.setState({
+      exp: str
+    })
   }
 
   render() {
@@ -21,7 +30,7 @@ class Main extends Component {
             <span className="Main-titles">researcher</span>
             <span className="Main-titles">mental health advocate</span>
           </div>
-          <button className="Main-btn">say hello!</button>
+          <a href="mailto:lenaryoo@gmail.com"><button className="Main-btn">say hello!</button></a>
         </div>
         <div className="Main-about">
           <span className="Main-heading">*About me</span>
@@ -39,46 +48,99 @@ class Main extends Component {
         <div className="Main-experience">
           <div className="Main-select-box">
             <span className="Main-heading">*Experience as </span>
-            <span className="Main-job Main-active">Developer</span>
-            <span className="Main-job">Researcher</span>
-            <span className="Main-job">Designer</span>
+            <span className={ this.state.exp === "dev" ? "Main-job Main-active" : "Main-job"} onClick={ () => this.updateExp("dev") }>Developer</span>
+            <span className={ this.state.exp === "res" ? "Main-job Main-active" : "Main-job"} onClick={ () => this.updateExp("res") }>Researcher</span>
+            <span className={ this.state.exp === "des" ? "Main-job Main-active" : "Main-job"} onClick={ () => this.updateExp("des") }>Designer</span>
           </div>
           <div className="Main-text-box">
             <div className="Main-text">
-              <span className="Main-exp-title">Full-Stack Developer @ Rithm School</span>
-              <span className="Main-exp-date">Jan 2019 - Present</span>
-              <span className="Main-exp-details">Build React Apps</span>
-              <span className="Main-exp-title">Front-End Developer @ Protoblock Inc.</span>
-              <span className="Main-exp-date">April 2018 - Oct 2018</span>
-              <span className="Main-exp-details">Rebuilt website to be responsive by implementing Bootstrap framework</span>
-              <span className="Main-exp-title">Agorithms Class @ Girl Develop It</span>
-              <span className="Main-exp-title">Web Developer Bootcamp @ Udemy</span>
-              <span className="Main-exp-title">C++ Class @ South Korea</span>
+              { this.state.exp === "dev" &&
+                <><span className="Main-exp-title"><b>Full-Stack Developer</b> @ Rithm School</span>
+                <span className="Main-exp-date">Jan 2019 - Present</span><br></br>
+
+                <span className="Main-exp-title"><b>Front-End Web Developer</b> @ Protoblock Inc.</span>
+                <span className="Main-exp-date">April 2018 - Oct 2018</span><br></br>
+
+                <div className="Main-hr"></div>
+                
+                <span className="Main-exp-title"><b>Web Developer Bootcamp</b> @ Udemy</span>
+                <span className="Main-exp-date">Oct 2018 - Jan 2019</span><br></br>
+
+                <span className="Main-exp-title"><b>Agorithms Class</b> @ Girl Develop It</span>
+                <span className="Main-exp-date">Sept 2018</span><br></br>
+
+                <span className="Main-exp-title"><b>C++ Class</b> @ South Korea</span>
+                <span className="Main-exp-date">Oct 2017</span><br></br>
+
+                <div className="Main-hr"></div>
+
+                <span className="Main-exp-title"><b>HackMentalHealth Hackathon</b></span>
+                <span className="Main-exp-date">Oct 2018</span><br></br>
+
+                <span className="Main-exp-title"><b>JAMstack Hackathon</b></span>
+                <span className="Main-exp-date">Nov 2018</span><br></br>
+
+                <span className="Main-exp-title"><b>WomenHack - The All-Women Hackathon</b></span>
+                <span className="Main-exp-date">Oct 2018</span><br></br></>
+              }
+              { this.state.exp === "res" &&
+                <><span className="Main-exp-title"><b>Research Analyst</b> @ Positive and Well-Being Lab</span>
+                <span className="Main-exp-date">Jan 2017 - May 2017</span><br></br>
+
+                <span className="Main-exp-title"><b>Research Assistant</b> @ Readiness, Activation, and Decision-Making Lab</span>
+                <span className="Main-exp-date">Jan 2017 – May 2017</span><br></br>
+
+                <span className="Main-exp-title"><b>Lab Manager, Researcher</b> @ Stress, Trauma, and Resilience Lab</span>
+                <span className="Main-exp-date">Jan 2016 - Jan 2017</span><br></br>
+
+                <div className="Main-hr"></div>
+                
+                <span className="Main-exp-title"><b>M.A. in Developmental Psychology Candidate</b> @ SFSU</span>
+                <span className="Main-exp-date">2016 - 2017</span><br></br>
+
+                <div className="Main-hr"></div>
+
+                <span className="Main-exp-title"><b>International Trauma Conference</b></span>
+                <span className="Main-exp-date">June 2017</span><br></br>
+
+                <span className="Main-exp-title"><b>Society for Personality and Social Psychology International Conference</b></span>
+                <span className="Main-exp-date">Jan 2017</span><br></br></>
+              }
+              { this.state.exp === "des" &&
+                <><span className="Main-exp-title"><b>Design Intern</b> @ Noll & Tam Architects</span>
+                <span className="Main-exp-date">June 2013 - Aug 2013</span><br></br>
+
+                <div className="Main-hr"></div>
+                
+                <span className="Main-exp-title"><b>B.A. in Architecture</b> @ UC Berkeley</span>
+                <span className="Main-exp-date">2009 - 2014</span><br></br></>
+              }
             </div>
           </div>
         </div>
         <div className="Main-projects">
           <span className="Main-heading">*Recent projects </span>
+          <div className="Main-projects-outer">
           <div className="Main-project-box">
-            <span className="Main-project-title">A Little Help From</span>
+            <a className="Main-project-title" href="https://alittlehelpfrom.herokuapp.com/">A Little Help From</a>
             <span className="Main-project-text">React front-end app built over a weekend at HackMentalHealth Hackathon. Streamlines the process of asking for support from friends.</span>
-            <a className="Main-project-link" href="https://alittlehelpfrom.herokuapp.com/">visit</a>
-            <span className="Main-project-tags">React, Hackathon</span>
+            <span className="Main-project-tags"><span>React</span><span>Hackathon</span></span>
           </div>
           <div className="Main-project-box">
-            <span className="Main-project-title">Jobly</span>
-            <span className="Main-project-text">React front-end, Node-Express back-end web app built as a part of Rithm School curriculum. Allow users to list and apply for jobs.</span>
-            <a className="Main-project-link" href="https://github.com/meowcodes/rithm-react-jobly">visit repo</a>
-            <span className="Main-project-tags">React, Node, Express, API, Jest</span>
+            <a className="Main-project-title" href="https://github.com/meowcodes/rithm-react-jobly">Jobly</a>
+            <span className="Main-project-text">React front-end, Node-Express back-end web app built as a part of Rithm School curriculum. Allows users to list and apply for jobs.</span>
+            <span className="Main-project-tags"><span>React</span><span>Node</span><span>Express</span><span>API</span><span>Jest</span></span>
+            
           </div>
+        </div>
         </div>
         <div className="Main-contact">
           <span className="Main-heading">*Let's connect</span>
           <div className="Main-contact-box">
-            <i className="fab fa-github"></i>
-            <i className="fab fa-linkedin-in"></i>
-            <i className="fab fa-codepen"></i>
-            <i className="fas fa-at"></i>
+            <a href="https://github.com/meowcodes"><i className="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/lenaryoo/"><i className="fab fa-linkedin-in"></i></a>
+            <a href="https://codepen.io/meowcodes/"><i className="fab fa-codepen"></i></a>
+            <a href="mailto:lenaryoo@gmail.com"><i className="fas fa-at"></i></a>
           </div>
         </div>
       </div>

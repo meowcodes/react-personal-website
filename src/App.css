@@ -15,4 +15,5 @@ button {
   border: solid 1px #f5ac72;
   text-transform: uppercase;
   letter-spacing: 0.075rem;
+  outline: none;
 }
