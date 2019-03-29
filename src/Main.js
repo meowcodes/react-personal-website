@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import cat from './cat.jpg';
 import snorkeling from './snorkeling.jpg';
+import resume from './resume.pdf'
 import './Main.css';
 
 class Main extends Component {
@@ -143,6 +144,11 @@ class Main extends Component {
             <a href="mailto:lenaryoo@gmail.com"><i className="fas fa-at"></i></a>
           </div>
         </div>
+        <a href={ resume }><div className="Main-resume-box">
+          <div className="Main-resume">
+              <span>RESUME</span>
+          </div>
+        </div></a>
       </div>
     );
   }
