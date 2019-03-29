@@ -6,21 +6,28 @@
 
 .Main-landing,
 .Main-about,
-.Main-projects,
-.Main-contact {
+.Main-contact, 
+.Main-experience,
+.Main-projects {
   margin: 1rem;
   display: flex;
   flex-direction: column;
+  /* border: solid 1px #ffd275 */
+}
+
+.Main-landing,
+.Main-about,
+.Main-contact {
   justify-content: center;
 }
 
 .Main-experience,
 .Main-projects {
-  margin: 1rem;
-  padding-top: 2rem;
-  display: flex;
-  flex-direction: column;
   justify-content: flex-start;
+}
+
+.Main-experience {
+  padding-top: 2rem;
 }
 
 .Main-landing{
@@ -33,7 +40,7 @@
 
 .Main-projects,
 .Main-contact {
-  min-height: 50vh;
+  min-height: 45vh;
 }
 
 .Main-heading {
@@ -238,14 +245,46 @@
 
 .Main-contact-box {
   margin: 2rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
 }
 
 .Main-contact-box i {
-  margin: 2rem 2rem;
+  /* margin: 2rem 2rem; */
   font-size: 2.5rem;
   color: #ffd275;
 }
 
 .Main-contact-box i:hover {
   color: beige;
+}
+
+@media (max-width: 576px) {
+  .Main {
+    width: 98vw;
+  }
+
+  .Main-about .Main-text-box {
+    width: 100%;
+  }
+
+  .Main-img-box {
+    display: none;
+  }
+
+  .Main-experience .Main-select-box,
+  .Main-projects-outer {
+    flex-direction: column
+  }
+
+  .Main-project-box {
+    width: 90%;
+  }
+
+
+.Main-experience .Main-text {
+  margin-bottom: 1rem;
+}
 }
