@@ -30,7 +30,7 @@ class Main extends Component {
             <span className="Main-titles">researcher</span>
             <span className="Main-titles">mental health advocate</span>
           </div>
-          <a href="mailto:lenaryoo@gmail.com"><button className="Main-btn">say hello!</button></a>
+          <button className="Main-btn"><a href="mailto:lenaryoo@gmail.com">say hello!</a></button>
         </div>
         <div className="Main-about">
           <span className="Main-heading">*About me</span>
