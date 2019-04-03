@@ -12,7 +12,7 @@
   margin: 1rem;
   display: flex;
   flex-direction: column;
-  /* border: solid 1px #ffd275 */
+  /* border: solid 1px var(--accent-light); */
 }
 
 .Landing,
@@ -44,7 +44,7 @@
 }
 
 .heading {
-  color: #f5ac72;
+  color: var(--accent-mid);
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: underline;
@@ -55,7 +55,7 @@
   font-size: 3rem;
   font-weight: bold;
   margin: 1rem 0rem;
-  color: #ffd275;
+  color: var(--accent-light);
 }
 
 .title-box {
@@ -65,10 +65,10 @@
 .titles {
   font-size: 0.9rem;
   margin: 0.25rem 0.45rem;
-  color: #51211d;
+  color: var(--accent-dark);
   padding: 0.25rem 0.35rem;
   font-weight: bold;
-  background-color: #f5ac72;
+  background-color: var(--accent-mid);
   display: inline-block;
 }
 
@@ -77,8 +77,8 @@
 }
 
 .btn:hover {
-  background-color: #ffd275;
-  color: #2b433f;
+  background-color: var(--accent-light);
+  color: var(--primary-dark);
 }
 
 .About-box {
@@ -97,7 +97,7 @@
 }
 
 .text b {
-  color: #f5ac72;
+  color: var(--accent-mid);
   font-size: 0.9rem;
 }
 
@@ -129,7 +129,7 @@
 }
 
 .job {
-  color: #ffd275;
+  color: var(--accent-light);
   border: none;
   font-family: inherit;
   text-transform: uppercase;
@@ -142,12 +142,12 @@
 }
 
 .job:hover {
-  background-color: beige;
-  color: #2b433f;
+  background-color: var(--primary-text);;
+  color: var(--primary-dark);
 }
 
 .active {
-  background-color: #51211d;
+  background-color: var(--accent-dark);
 }
 
 .Experience-title {
@@ -165,7 +165,7 @@
   font-weight: bold;
   margin: 0.5rem;
   padding: 0.25rem 0.35rem;
-  background-color: #51211d;
+  background-color: var(--accent-dark);
   display: inline-block;
   text-transform: uppercase;
 }
@@ -180,7 +180,7 @@
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ffd275;
+  border-top: 1px solid var(--accent-light);
 }
 
 .Projects-outer {
@@ -197,10 +197,10 @@
 .Projects-title {
   display: inline-block;
   padding: 0.25rem 0.35rem;
-  background-color: #51211d;
+  background-color: var(--accent-dark);
   text-transform: uppercase;
   letter-spacing: 0.15rem;
-  color: #ffd275;
+  color: var(--accent-light);
   font-weight: 600;
   font-size: 0.9rem;
   text-decoration: none;
@@ -217,8 +217,8 @@
 }
 
 .Projects-link {
-  color: #f5ac72;
-  /* border: solid 1px #ffd275; */
+  color: var(--accent-mid);
+  /* border: solid 1px var(--accent-light); */
   margin: 0.5rem;
   /* padding: 0.25rem 0.35rem; */
   font-size: 0.9rem;
@@ -237,8 +237,8 @@
 
 .Projects-tags span {
   padding: 0.25rem 0.5rem;
-  background-color: #ffd275;
-  color: #2b433f;
+  background-color: var(--accent-light);
+  color: var(--primary-dark);
   font-weight: bold;
   text-transform: uppercase;
   margin: 0.25rem;
@@ -256,11 +256,11 @@
 .Contact-box i {
   /* margin: 2rem 2rem; */
   font-size: 2.5rem;
-  color: #ffd275;
+  color: var(--accent-light);
 }
 
 .Contact-box i:hover {
-  color: beige;
+  color: var(--primary-text);;
 }
 
 .resume-box {
@@ -269,7 +269,7 @@
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
-  background-color: #ffd275;
+  background-color: var(--accent-light);
   bottom: 10vh;
   right: 7vw;
   display: flex;
@@ -277,7 +277,7 @@
   align-items: center;
   font-weight: bold;
   font-size: 0.5rem;
-  color: #2b433f;
+  color: var(--primary-dark);
 }
 
 .resume-box i {

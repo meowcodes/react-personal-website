@@ -1,18 +1,18 @@
 body {
-  background-color: #2b433f;
-  color: beige;
+  background-color: var(--primary-dark);
+  color: var(--primary-text);
   font-family: 'Muli', sans-serif;
   letter-spacing: 0.025rem;
 }
 
 button {
   background-color: inherit;
-  color: #ffd275;
+  color: var(--accent-light);
   font-size: 0.75rem;
   font-weight: bold;
   margin: 1rem 0rem;
   padding: 0.25rem;
-  border: solid 1px #f5ac72;
+  border: solid 1px var(--accent-mid);
   text-transform: uppercase;
   letter-spacing: 0.075rem;
   outline: none;
