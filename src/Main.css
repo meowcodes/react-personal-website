@@ -4,46 +4,46 @@
   margin: 0 auto;
 }
 
-.Main-landing,
-.Main-about,
-.Main-contact, 
-.Main-experience,
-.Main-projects {
+.Landing,
+.About,
+.Experience,
+.Projects,
+.Contact {
   margin: 1rem;
   display: flex;
   flex-direction: column;
   /* border: solid 1px #ffd275 */
 }
 
-.Main-landing,
-.Main-about,
-.Main-contact {
+.Landing,
+.About,
+.Contact {
   justify-content: center;
 }
 
-.Main-experience,
-.Main-projects {
+.Experience,
+.Projects {
   justify-content: flex-start;
 }
 
-.Main-experience {
+.Experience {
   padding-top: 2rem;
 }
 
-.Main-landing{
+.Landing{
   min-height: 100vh;
 } 
-.Main-about,
-.Main-experience {
+.About,
+.Experience {
   min-height: 75vh;
 }
 
-.Main-projects,
-.Main-contact {
+.Projects,
+.Contact {
   min-height: 45vh;
 }
 
-.Main-heading {
+.heading {
   color: #f5ac72;
   font-weight: bold;
   text-transform: uppercase;
@@ -51,18 +51,18 @@
   letter-spacing: 0.25rem;
 }
 
-.Main-name {
+.name {
   font-size: 3rem;
   font-weight: bold;
   margin: 1rem 0rem;
   color: #ffd275;
 }
 
-.Main-title-box {
+.title-box {
   margin: 1rem;
 }
 
-.Main-titles {
+.titles {
   font-size: 0.9rem;
   margin: 0.25rem 0.45rem;
   color: #51211d;
@@ -72,63 +72,63 @@
   display: inline-block;
 }
 
-.Main-btn {
+.btn {
   width: 100px;
 }
 
-.Main-btn:hover {
+.btn:hover {
   background-color: #ffd275;
   color: #2b433f;
 }
 
-.Main-about-box {
+.About-box {
   display: flex;
   flex-direction: row;
 }
 
-.Main-about .Main-text-box {
+.About .text-box {
   width: 60%;
   margin: 1rem;
 }
 
-.Main-text {
+.text {
   display: inline-block;
   margin: 1rem;
 }
 
-.Main-text b {
+.text b {
   color: #f5ac72;
   font-size: 0.9rem;
 }
 
-.Main-img-box {
+.img-box {
   position: relative;
   width: 40%;
 }
 
-.Main-img-box img {
+.img-box img {
   position: absolute;
 }
 
-.Main-img-cat {
+.img-cat {
   z-index: 3;
   width: 90%;
 }
 
-.Main-img-snorkeling {
+.img-snorkeling {
   z-index: 2;
   width: 75%;
   bottom: 1rem;
   right: 0;
 }
 
-.Main-select-box {
+.select-box {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
 }
 
-.Main-job {
+.job {
   color: #ffd275;
   border: none;
   font-family: inherit;
@@ -141,26 +141,26 @@
   cursor: pointer;
 }
 
-.Main-job:hover {
+.job:hover {
   background-color: beige;
   color: #2b433f;
 }
 
-.Main-active {
+.active {
   background-color: #51211d;
 }
 
-.Main-exp-title {
+.Experience-title {
   padding: 0.5rem 0.25rem;
   font-size: 0.85rem;
   /* display: block; */
 }
 
-.Main-exp-title b {
+.Experience-title b {
   text-decoration: underline;
 }
 
-.Main-exp-date {
+.Experience-date {
   font-size: 0.65rem;
   font-weight: bold;
   margin: 0.5rem;
@@ -170,12 +170,12 @@
   text-transform: uppercase;
 }
 
-.Main-exp-details {
+.Experience-details {
   display: block;
   margin: 0.5rem;
 }
 
-.Main-hr {
+.hr {
   margin: 0.85rem 0.25rem;
   display: block;
   height: 1px;
@@ -183,18 +183,18 @@
   border-top: 1px solid #ffd275;
 }
 
-.Main-projects-outer {
+.Projects-outer {
   display: flex;
   flex-direction: row;
 }
 
-.Main-project-box {
+.Projects-box {
   margin: 1rem;
   padding: 1rem 1rem 0rem;
   width: 50%;
 }
 
-.Main-project-title {
+.Projects-title {
   display: inline-block;
   padding: 0.25rem 0.35rem;
   background-color: #51211d;
@@ -206,17 +206,17 @@
   text-decoration: none;
 }
 
-.Main-project-title:hover {
+.Projects-title:hover {
   text-decoration: underline;
 }
 
-.Main-project-text {
+.Projects-text {
   display: block;
   margin: 1rem;
   font-size: 0.85rem;
 }
 
-.Main-project-link {
+.Projects-link {
   color: #f5ac72;
   /* border: solid 1px #ffd275; */
   margin: 0.5rem;
@@ -229,13 +229,13 @@
   text-decoration: underline;
 }
 
-.Main-project-tags {
+.Projects-tags {
   display: block;
   font-size: 0.75rem;
   margin: 1.5rem 1rem;
 }
 
-.Main-project-tags span {
+.Projects-tags span {
   padding: 0.25rem 0.5rem;
   background-color: #ffd275;
   color: #2b433f;
@@ -245,7 +245,7 @@
   display: inline-block;
 }
 
-.Main-contact-box {
+.Contact-box {
   margin: 2rem auto;
   display: flex;
   flex-direction: row;
@@ -253,17 +253,18 @@
   width: 90%;
 }
 
-.Main-contact-box i {
+.Contact-box i {
   /* margin: 2rem 2rem; */
   font-size: 2.5rem;
   color: #ffd275;
 }
 
-.Main-contact-box i:hover {
+.Contact-box i:hover {
   color: beige;
 }
 
-.Main-resume-box {
+.resume-box {
+  z-index: 100;
   position: fixed;
   height: 3rem;
   width: 3rem;
@@ -279,7 +280,7 @@
   color: #2b433f;
 }
 
-.Main-resume-box i {
+.resume-box i {
   width: 100%;
   height: 100%;
 }
@@ -289,25 +290,25 @@
     width: 98vw;
   }
 
-  .Main-about .Main-text-box {
+  .About .text-box {
     width: 100%;
   }
 
-  .Main-img-box {
+  .img-box {
     display: none;
   }
 
-  .Main-experience .Main-select-box,
-  .Main-projects-outer {
+  .Experience .select-box,
+  .Projects-outer {
     flex-direction: column
   }
 
-  .Main-project-box {
+  .Projects-box {
     width: 90%;
   }
 
 
-.Main-experience .Main-text {
+.Experience .text {
   margin-bottom: 1rem;
 }
 }
