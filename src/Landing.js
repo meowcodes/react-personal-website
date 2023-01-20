@@ -7,7 +7,7 @@ class Landing extends Component {
         <span className="heading">*Hello, welcome!</span>
         <span className="name">meowcodes // Lena Ryoo</span>
         <div className="title-box">
-          <span className="titles">full-stack web developer</span>
+          <span className="titles">full-stack software engineer</span>
           <span className="titles">designer</span>
           <span className="titles">researcher</span>
           <span className="titles">mental health advocate</span>
