@@ -8,7 +8,7 @@ class DevExp extends Component {
         <span className="Experience-date">June 2019 - Present</span><br></br>
       
         <span className="Experience-title"><b>Full-Stack Developer</b> @ Rithm School</span>
-        <span className="Experience-date">Jan 2019 - Present</span><br></br>
+        <span className="Experience-date">Jan 2019 - May 2019</span><br></br>
 
         <span className="Experience-title"><b>Front-End Web Developer</b> @ Protoblock Inc.</span>
         <span className="Experience-date">April 2018 - Oct 2018</span><br></br>
