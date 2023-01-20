@@ -4,6 +4,9 @@ class DevExp extends Component {
   render() {
     return (
       <div className="DevExp text">
+        <span className="Experience-title"><b>Software Engineer</b> @ Pinterestl</span>
+        <span className="Experience-date">June 2019 - Present</span><br></br>
+      
         <span className="Experience-title"><b>Full-Stack Developer</b> @ Rithm School</span>
         <span className="Experience-date">Jan 2019 - Present</span><br></br>
 
